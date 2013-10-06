@@ -6,6 +6,7 @@
         'lib/bootstrap.js',
         'lib/greensock/TweenLite.js',
         'lib/jquery.fancybox.js',
+        'lib/jquery.flexslider.js',
         'jquery.ext.js',
         'treat.js',
         'treat.page.js',

@@ -10,13 +10,11 @@
     <meta http-equiv="cleartype" content="on">
 
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-
-
 </head>
 <body>
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container">
+            <div class="nav-container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">t r e a t</a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -27,11 +25,11 @@
                 </div>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li><a href='#'>HOME</a></li>
-                        <li><a href='#'>PRODUCTS</a></li>
-                        <li><a href='#'>SERVICES</a></li>
-                        <li><a href='#'>ABOUT US</a></li>
-                        <li><a href='#'>CONTACT</a></li>
+                        <li><a href='#home'>HOME</a></li>
+                        <li><a href='#products'>PRODUCTS</a></li>
+                        <li><a href='#services'>SERVICES</a></li>
+                        <li><a href='#about'>ABOUT US</a></li>
+                        <li><a href='#contact'>CONTACT</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -39,9 +37,28 @@
     </div>
 
 
-    <div id="container" class="home-content span12 container container-fluid">
-        <img class="logo .col .col-lg-6 .col .col-offset-3 img-responsive" src="img/main_logo.png">
+    <div id="container" class="span12 container container-fluid">
+        <div class="home-content content" id="#home">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="img/sliderphotos/img1.jpg"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="products-content content" id="#products">
+            <img class="logo .col .col-lg-6 .col .col-offset-3 img-responsive" src="img/main_logo.png">
+        </div>
+        <div class="services-content content" id="#services">
+            <img class="logo .col .col-lg-6 .col .col-offset-3 img-responsive" src="img/main_logo.png">
+        </div>
+        <div class="about-content content" id="#about">
+            <img class="logo .col .col-lg-6 .col .col-offset-3 img-responsive" src="img/main_logo.png">
+        </div>
+        <div class="contact-content content" id="#contact">
+            <img class="logo .col .col-lg-6 .col .col-offset-3 img-responsive" src="img/main_logo.png">
+        </div>
     </div>
+    <footer>Copyright 2013 Treat</footer>
     <script>window.jQuery || document.write('<script type="text/javascript" src="lib/jquery-1.10.2.js"><\/script>')</script>
 
     <!-- In production use:
