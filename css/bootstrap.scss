@@ -22,7 +22,7 @@
 // Core CSS
 @import "scaffolding";
 @import "type";
-@import "code";
+//@import "code";
 @import "grid";
 
 @import "tables";
@@ -30,19 +30,19 @@
 @import "buttons";
 
 // Components: common
-@import "component-animations";
-@import "glyphicons";
-@import "dropdowns";
-@import "wells";
-@import "close";
+//@import "component-animations";
+//@import "glyphicons";
+//@import "dropdowns";
+//@import "wells";
+//@import "close";
 
 // Components: Nav
 @import "navs";
 @import "navbar";
-@import "button-groups";
-@import "breadcrumbs";
-@import "pagination";
-@import "pager";
+//@import "button-groups";
+//@import "breadcrumbs";
+//@import "pagination";
+//@import "pager";
 
 // Components: Popovers
 @import "modals";
@@ -53,12 +53,12 @@
 @import "alerts";
 @import "thumbnails";
 @import "media";
-@import "labels";
-@import "badges";
-@import "progress-bars";
-@import "accordion";
-@import "carousel";
-@import "jumbotron";
+//@import "labels";
+//@import "badges";
+//@import "progress-bars";
+//@import "accordion";
+//@import "carousel";
+//@import "jumbotron";
 
 // Utility classes
 @import "utilities"; // Has to be last to override when necessary
@@ -69,4 +69,4 @@
 @import "style";
 //-------------------MINE
 
-@import "responsive-utilities"; 
+@import "responsive-utilities";

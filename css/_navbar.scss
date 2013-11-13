@@ -94,7 +94,7 @@ nav-container {
   padding: 7px 15px;
   font-size: 18px;
   font-weight: 500;
-  line-height: $lineHeightBase;
+  line-height: $lineHeightBase * 1.5;
   color: $navbarBrandColor;
   text-align: center;
   &:hover,

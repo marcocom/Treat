@@ -174,8 +174,7 @@ pre code { padding: 0; color: inherit; white-space: pre; white-space: pre-wrap; 
 
 [class^="span"] { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
 
-@media screen and (min-width: 768px) { .container { max-width: 728px; }
-  [class^="span"] { float: left; }
+@media screen and (min-width: 768px) { [class^="span"] { float: left; }
   .span12 { width: 100%; }
   .span11 { width: 91.66667%; }
   .span10 { width: 83.33333%; }
@@ -200,8 +199,6 @@ pre code { padding: 0; color: inherit; white-space: pre; white-space: pre-wrap; 
   .offset3 { margin-left: 25%; }
   .offset2 { margin-left: 16.66667%; }
   .offset1 { margin-left: 8.33333%; } }
-@media screen and (min-width: 992px) { .container { max-width: 940px; } }
-@media screen and (min-width: 1200px) { .container { max-width: 1170px; } }
 [class*="span"].pull-right { float: right; }
 
 table { max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0; }
@@ -904,7 +901,7 @@ nav-container { position: relative; }
 
 .navbar-fixed-bottom { bottom: 0; }
 
-.navbar-brand { display: block; max-width: 200px; margin-left: auto; margin-right: auto; padding: 7px 15px; font-size: 18px; font-weight: 500; line-height: 20px; color: #777777; text-align: center; }
+.navbar-brand { display: block; max-width: 200px; margin-left: auto; margin-right: auto; padding: 7px 15px; font-size: 18px; font-weight: 500; line-height: 30px; color: #777777; text-align: center; }
 .navbar-brand:hover, .navbar-brand:focus { color: #5e5e5e; text-decoration: none; background-color: transparent; }
 
 .navbar-toggle { position: absolute; top: 10px; right: 10px; padding: 8px 12px; background-color: transparent; border: 1px solid #ddd; border-radius: 4px; }
@@ -1338,13 +1335,15 @@ MY STYLE
 */
 body { background: transparent url(img/global-bg-tile.png) repeat-x 0 0; margin: 0; }
 
-h1, h2, h3, h4, h5, h6, p, a, td, th, label, input, li, .datepicker-dropdown { font-family: Garamond, "Times New Roman", Times, serif; }
+h1, h2, h3, h4, h5, h6, p, a, td, th, label, input, li, .datepicker-dropdown { font-family: 'EB Garamond', serif; color: #999999; }
 
 a:visited, a:link, a:hover { text-decoration: none; color: #999999; }
 
 em { text-emphasis-style: none; font-style: normal; }
 
 ul { list-style-type: none; margin: 0; }
+
+body { width: 100%; height: 100%; }
 
 .mortis { -webkit-transition: box-shadow 1s ease-in-out; -moz-transition: box-shadow 1s ease-in-out; -ms-transition: box-shadow 1s ease-in-out; -o-transition: box-shadow 1s ease-in-out; transition: box-shadow 1s ease-in-out; -webkit-transition: background-image 1s ease-in-out; -moz-transition: background-image 1s ease-in-out; -ms-transition: background-image 1s ease-in-out; -o-transition: background-image 1s ease-in-out; transition: background-image 1s ease-in-out; -webkit-box-shadow: compact(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #5cb85c, false, false, false, false, false, false, false, false, false); box-shadow: compact(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #5cb85c, false, false, false, false, false, false, false, false, false); border-top-right-radius: 6px; border-top-left-radius: 6px; border-bottom-right-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; border-top-left-radius: 6px; overflow: hidden; }
 
@@ -1361,7 +1360,42 @@ hr { display: block; position: relative; padding: 0; height: 0; clear: both; bor
 body { background-color: white; }
 body #container { padding-top: 50px; }
 
-.home-content .logo { width: 500px; height: 294px; }
+.content { min-height: 500px; width: 100%; display: block; padding: 5%; }
+.content .section-title { font-size: 70px; font-size: 7rem; color: #eeeeee; position: relative; display: block; margin: 0 auto 10px; line-height: 1.3em; width: 90%; text-align: center; }
+
+.home-content .logo { width: 500px; height: 294px; margin: 0 auto; display: block; }
+
+.products-content { height: auto; }
+.products-content .brands { display: block; width: 100%; height: 200px; }
+.products-content .brands ul li { margin: 0 auto; }
+.products-content .brands ul li img { height: auto; width: auto; display: block; margin: 0 auto; }
+
+.services-content { width: 100%; margin: 100px auto; }
+.services-content ul { display: block; margin: 10px auto 10px; width: 100%; }
+.services-content ul li { margin: 0 auto; text-align: center; }
+.services-content ul li h2 { font-weight: 600; margin: 20px auto; line-height: 2em; }
+.services-content ul li h3 { line-height: 1em; }
+.services-content ul li h3 sup { font-size: small; font-weight: 200; vertical-align: super; }
+
+.reviews-content { width: 100%; }
+.reviews-content .articles { position: relative; display: block; margin: 0 auto; }
+.reviews-content .articles ul { margin: 0 auto; }
+.reviews-content .articles ul li { width: 350px; height: auto; float: left; margin: 10px; }
+.reviews-content .articles ul li h4 { text-align: center; color: #ad6704; width: 80%; }
+.reviews-content .articles ul li a { background: none; border: 0; width: 300px; }
+.reviews-content .articles ul li a img { width: 300px; height: auto; border: 1px solid #999999; }
+
+.about-content { margin: 100px auto; width: 100%; }
+.about-content h4 { padding: 10px 30px; text-align: center; line-height: 1em; color: white; }
+.about-content h4 p { margin: 25px; }
+
+.contact-content { margin: 100px auto 200px; display: block; margin-left: auto; margin-right: auto; width: auto; }
+.contact-content div { margin-top: 10px; display: block; margin-left: auto; margin-right: auto; }
+.contact-content div h4, .contact-content div h3 { text-align: center; line-height: 1em; margin: 20px; }
+.contact-content div h4 a, .contact-content div h3 a { color: #ad6704; }
+.contact-content div img { margin: 20px auto; display: block; margin-left: auto; margin-right: auto; }
+
+footer { color: #666; position: relative; display: block; right: 20px; width: 100%; text-align: right; }
 
 .hidden { display: none; visibility: hidden; }
 

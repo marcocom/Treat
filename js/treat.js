@@ -148,52 +148,8 @@
         },
         __show : function() {
             this.show();
-        },
-        formClick : function(e) {
-            e.preventDefault();
-            var valid = this._form.valid();
-            if(valid) {
-                var data = this._form.serialize();
-                $.post(this._postUrl,data,this._submitResult.bind(this),"json");
-            }
-        },
-        _submitResult : function(result,success,request) {
-            if(result && result.success == true) {
-                this.hide();
-                if(typeof(result.email) != "Undefined") {
-                    registeredEmail = result.email;
-                }
-                else {
-                    registeredEmail = "Undefined";
-                }
-                this.submitSuccess(result.redirect);
-            }
-            else {
-//                $log('submit failed');
-                this._displayFormErrors(result);
-            }
-
-        },
-        submitSuccess : function(redirect) {
-            document.location.reload();
-        },
-        _displayFormErrors: function(errors) {
-            for(var errorKey in errors) {
-                if(errors.hasOwnProperty(errorKey)) {
-                    if (typeof errors[errorKey] == 'array')
-                        error = errors[errorKey][0];
-                    else
-                        error = errors[errorKey];
-                    if(typeof(error) == "string")
-                    {
-                        errorString = error.replace(/\./g,"_").replace(/\s+/g,"_").toLowerCase();
-                        var label = this._form.form.find("label[for=" + errorKey + "]");
-                        errorMsg = label.text() + " " + Treat.FormErrors[errorString];
-                        label.parent().find('div.field-validation').removeClass('valid').addClass('error').html('<div></div><label class="error">' + errorMsg + '</label>');
-                    }
-                }
-            }
         }
+
     });
     
     Treat.Event = Class.extend({
