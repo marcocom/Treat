@@ -275,6 +275,12 @@
   border-bottom-left-radius: $radius;
      border-top-left-radius: $radius;
 }
+@mixin tb_border-radius($radius){
+  @include tb_border-top-radius($radius);
+  @include tb_border-right-radius($radius);
+  @include tb_border-bottom-radius($radius);
+  @include tb_border-left-radius($radius);
+}
 
 // Drop shadows
 @mixin tb_box-shadow($shadow) {

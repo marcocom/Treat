@@ -1,6 +1,4 @@
-cat bootstrap/bootstrap-button.js lib/swfobject.js lib/categorizr.js lib/jquery.fancybox.min.js lib/jquery.flexslider.min.js jquery.ext.js quince.js quince.page.js plugins.js helper.js > cat_main.js
+cat lib/lodash.underscore.js lib/bootstrap.js lib/jquery.fancybox.js jquery.ext.js treat.js treat.page.js treat.js helper.js > cat_main.js
+
 java -jar compress.jar cat_main.js -o main.js
 rm cat_main.js
-
-
-

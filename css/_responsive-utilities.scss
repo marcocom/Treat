@@ -40,14 +40,21 @@
 }
 
 // Phones only
-@media (max-width: 767px) {
-  @import "responsive_max767";
+@media (mind-width:481px) and (max-width: 767px) {
+  @import "responsive_min481_max767";
   // Hide everything else
   .hidden-desktop    { display: inherit !important; }
   .visible-desktop   { display: none !important; }
   // Show
-  .visible-phone     { display: inherit !important; } // Use inherit to restore previous behavior
+  .visible-tablet     { display: inherit !important; } // Use inherit to restore previous behavior
   // Hide
+  .hidden-tablet      { display: none !important; }
+}
+
+@media(max-width: 480px){
+  @import "responsive_max480";
+  .visible-phone     { display: inherit !important; } // Use inherit to restore previous behavior
+// Hide
   .hidden-phone      { display: none !important; }
 }
 

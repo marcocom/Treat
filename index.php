@@ -1,18 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<? include('header.php') ?>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>t r e a t :: a m s t e r d a m :: w e l c o m e</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="cleartype" content="on">
-    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <script type="text/javascript" src="js/lib/modernizr.js"></script>
-</head>
-<body>
     <div class="navbar navbar-fixed-top" id="topnav">
         <div class="navbar-inner">
             <div class="nav-container">
@@ -37,47 +24,92 @@
         </div>
     </div>
 
+    <nav id="primary">
+        <ul>
+            <li>
+                <a class="product" href="#products"><em></em>
+                    <h1>Our Health and Beauty Products</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="services" href="#services"><em></em>
+                    <h1>Our Services Offered</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="reviews" href="#reviews"><em></em>
+                    <h1>Reviews and Current News</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="about" href="#about"><em></em>
+                    <h1>About Lynn &amp; Tory</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="contact" href="#contact"><em></em>
+                    <h1>Finding Us</h1>
+                </a>
+
+            </li>
+        </ul>
+    </nav>
 
     <div id="container" class="container row">
         <div class="home-content content col-md-10 col-offset-1 row" id="home">
-            <img class="logo col-md-6 col-offset-3 img-responsive" src="img/main_logo.png">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li><img src="img/sliderphotos/img1.jpg"></li>
-                    <li><img src="img/sliderphotos/img2.jpg"></li>
-                    <li><img src="img/sliderphotos/img3.jpg"></li>
-                    <li><img src="img/sliderphotos/img4.jpg"></li>
-                    <li><img src="img/sliderphotos/img5.jpg"></li>
-                </ul>
-            </div>
+            <img class="logo img-responsive" src="img/logo_horizontal.png">
+<!--            <img class="logo col-md-6 col-offset-3 img-responsive" src="img/main_logo.png">-->
+<!--            <div class="flexslider">-->
+<!--                <ul class="slides">-->
+<!--                    <li><img src="img/sliderphotos/img1.jpg"></li>-->
+<!--                    <li><img src="img/sliderphotos/img2.jpg"></li>-->
+<!--                    <li><img src="img/sliderphotos/img3.jpg"></li>-->
+<!--                    <li><img src="img/sliderphotos/img4.jpg"></li>-->
+<!--                    <li><img src="img/sliderphotos/img5.jpg"></li>-->
+<!--                </ul>-->
+<!--            </div>-->
         </div>
         <div class="products-content content col-md-10 col-offset-1 row" id="products">
             <h1 class="section-title">our products</h1>
             <div class="brands">
                 <ul>
                     <li>
-                        <img src="img/products/brand/kama.png"><br/>
+                        <img src="img/products/kama_homepage.jpg">
                     </li>
                 </ul>
             </div>
+            <nav class="next-prev">
+                <a class="prev home" href="#home">Prev</a>
+                <hr />
+                <a class="next services" href="#services">Next</a>
+            </nav>
         </div>
         <div class="services-content content col-md-10 col-offset-1 row" id="services">
             <h1 class="section-title">our services</h1>
             <ul class="col-md-6 col-offset-3">
                 <li><h2>h    a    i    r</h2></li>
-                <li><h3>color €60<sup>&amp; up</sup></h3></li>
-                <li><h3>highlights half head €75<sup>&amp; up</sup></h3></li>
-                <li><h3>highlights full head €150<sup>&amp; up</sup></h3></li>
-                <li><h3>hair extensions instalation €300<sup>&amp; up</sup></h3></li>
-                <li><h3>dread-maintenance €60 <sup>/hour</sup></h3></li>
-                <li><h3>dread perms €250<sup>&amp; up</sup></h3></li>
-                <li><h3>kama scalp treatment/deep conditioning €50</h3></li>
+                <li><h3>color &euro;60<sup>&amp; up</sup></h3></li>
+                <li><h3>highlights half head &euro;75<sup>&amp; up</sup></h3></li>
+                <li><h3>highlights full head &euro;150<sup>&amp; up</sup></h3></li>
+                <li><h3>hair extensions instalation &euro;300<sup>&amp; up</sup></h3></li>
+                <li><h3>dread-maintenance &euro;60 <sup>/hour</sup></h3></li>
+                <li><h3>dread perms &euro;250<sup>&amp; up</sup></h3></li>
+                <li><h3>kama scalp treatment/deep conditioning &euro;50</h3></li>
                 <li><h2>a   y   u   r   v   e   d   a</h2></li>
-                <li><h3>consultation €95</h3></li>
-                <li><h3>hot oil massage €95</h3></li>
-                <li><h3>marma treatment €95</h3></li>
-                <li><h3>energy work €95</h3></li>
+                <li><h3>consultation &euro;95</h3></li>
+                <li><h3>hot oil massage &euro;95</h3></li>
+                <li><h3>marma treatment &euro;95</h3></li>
+                <li><h3>energy work &euro;95</h3></li>
             </ul>
+            <nav class="next-prev">
+                <a class="prev products" href="#products">Prev</a>
+                <hr />
+                <a class="next reviews" href="#reviews">Next</a>
+            </nav>
         </div>
         <div class="reviews-content content col-md-10 col-offset-1 row" id="reviews">
             <h1 class="section-title">related news</h1>
@@ -97,6 +129,11 @@
                     </li>
                 </ul>
             </div>
+            <nav class="next-prev">
+                <a class="prev services" href="#services">Prev</a>
+                <hr />
+                <a class="next about" href="#about">Next</a>
+            </nav>
         </div>
         <div class="about-content content col-md-10 col-offset-1 row" id="about">
             <h1 class="section-title">about us</h1>
@@ -108,16 +145,71 @@
                         <p>This is a meeting ground for women to gather, learn from workshops & courses and to discover the balance of inner and outer beauty.</p>
                         <p>Their innovative approach brings together one's inner and outer beauty: 'when you look good, you feel good, when you feel good, you look even better!</p></h4>
             </div>
+
+            <nav class="next-prev">
+                <a class="prev reviews" href="#reviews">Prev</a>
+                <hr />
+                <a class="next contact" href="#contact">Next</a>
+            </nav>
         </div>
         <div class="contact-content content col-md-10 col-offset-1 row" id="contact">
             <h1 class="section-title">finding treat</h1>
             <div class="col-md-3 col-offset-3"><h4>Find your route to visit us using GoogleMaps by clicking here:<br><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Ceintuurbaan+47,+Oude+Pijp,+Amsterdam,+The+Netherlands&aq=t&sll=52.374716,4.898623&sspn=0.21274,0.300064&vpsrc=6&t=h&ie=UTF8&hq=&hnear=Ceintuurbaan+47,+1072+Amsterdam,+Noord-Holland,+The+Netherlands&ll=52.352607,4.888675&spn=0.001607,0.002344&z=19&iwloc=A">Ceintuurban 47, Amsterdam</a></h4></div>
             <div class="col-md-3 col-offset-6"><img class="img-responsive" src="https://maps.google.com/maps/api/staticmap?size=300x300&maptype=roadmap&sensor=false&markers=color:red%7C52.352606,4.888675&client=google-maps-sharing&signature=PiY2RBHWL3YLl4jIXf5eqICWIbA="></div>
             <div class="col-md-6 col-offset-3"><h3><a href="mailto:info@treat-amsterdam.com">info&#64;treatamsterdam.com</a></h3></div>
+            <nav class="next-prev">
+                <a class="prev about" href="#about">Prev</a>
+                <hr />
+            </nav>
         </div>
+
+    </div>
+    <div id="background-bg1">
+        <ul class="slides">
+<!--            <li><img src="img/main_img.jpg"></li>-->
+            <li><img src="img/sliderphotos/img1.jpg"></li>
+            <li><img src="img/sliderphotos/img2.jpg"></li>
+            <li><img src="img/sliderphotos/img3.jpg"></li>
+            <li><img src="img/sliderphotos/img4.jpg"></li>
+            <li><img src="img/sliderphotos/img5.jpg"></li>
+            <li><img src="img/sliderphotos/img6.jpg"></li>
+
+            <li><img src="img/sliderphotos/img1.jpg"></li>
+            <li><img src="img/sliderphotos/img2.jpg"></li>
+            <li><img src="img/sliderphotos/img3.jpg"></li>
+            <li><img src="img/sliderphotos/img4.jpg"></li>
+            <li class="visible-tablet"><img src="img/sliderphotos/img5.jpg"></li>
+            <li class="visible-tablet"><img src="img/sliderphotos/img6.jpg"></li>
+
+            <li class="visible-tablet"><img src="img/sliderphotos/img1.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img2.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img5.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img6.jpg"></li>
+
+            <li class="visible-phone"><img src="img/sliderphotos/img1.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img2.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img5.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img6.jpg"></li>
+
+            <li class="visible-phone"><img src="img/sliderphotos/img1.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img2.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img5.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img6.jpg"></li>
+
+            <li class="visible-phone"><img src="img/sliderphotos/img1.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img2.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
+            <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
+
+
+        </ul>
     </div>
     <footer><h6>Copyright 2013 Treat</h6></footer>
-    <script>window.jQuery || document.write('<script type="text/javascript" src="js/lib/jquery-1.10.2.js"><\/script>')</script>
-    <script type="text/javascript" src="js/loader.js"></script>
-</body>
-</html>
+
+<? include('footer.php') ?>

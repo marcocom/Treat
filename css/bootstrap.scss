@@ -30,19 +30,19 @@
 @import "buttons";
 
 // Components: common
-//@import "component-animations";
-//@import "glyphicons";
-//@import "dropdowns";
-//@import "wells";
-//@import "close";
+@import "component-animations";
+@import "glyphicons";
+@import "dropdowns";
+@import "wells";
+@import "close";
 
 // Components: Nav
 @import "navs";
 @import "navbar";
 //@import "button-groups";
 //@import "breadcrumbs";
-//@import "pagination";
-//@import "pager";
+@import "pagination";
+@import "pager";
 
 // Components: Popovers
 @import "modals";
@@ -56,7 +56,7 @@
 //@import "labels";
 //@import "badges";
 //@import "progress-bars";
-//@import "accordion";
+@import "accordion";
 //@import "carousel";
 //@import "jumbotron";
 

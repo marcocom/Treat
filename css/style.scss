@@ -44,6 +44,7 @@ ul{
 body{
   width:100%;
   height:100%;
+  //background: transparent url('../img/trees_sky.jpg') repeat-y 0 0;
 }
 .mortis{
   -webkit-transition: box-shadow 1s ease-in-out;
@@ -86,7 +87,7 @@ hr {
   border:                       none;
   //background: transparent url(img/horiz-divline-411.png) no-repeat 0 0;
   margin:                       0 auto;
-  border-top:                   1px solid #aaaaaa;
+  border-top:                   1px solid $brand_gray;
   border-bottom:                1px solid $white;
   @include opacity(40);
 }
@@ -97,57 +98,159 @@ hr {
 }
 
 
-.navbar .nav-container h3{
-
+html {
+ overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 
 
 
+//--------------------------------------------SCROLL NAVS
+
+nav#primary {
+  z-index: 5;
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  margin-top: -40px;
+  li {
+    position: relative;
+    height: 20px;
+  }
+  a {
+    width:auto;
+    em{
+      display: block;
+      width: 20px;
+      height: 20px;
+      text-indent: -9999px;
+      background: transparent url(img/nav-dot.png) 4px 4px no-repeat;
+    }
+    h1 {
+      position: absolute;
+      font-size: 18px;
+      right: 22px;
+      top: -34px;
+      display: none;
+      padding: 4px 20px 4px 7px;;
+      color: $brand_white;
+      white-space: nowrap;
+      background: transparent url(img/nav-arrow.png) 100% 50% no-repeat;
+    }
+    h1:hover{
+      display:block;
+    }
+  }
+  a:hover,
+  a.active {
+    background: transparent url(img/nav-dot.png) 4px -16px no-repeat;
+  }
+  a:hover{
+    h1{
+      display:block;
+    }
+  }
+
+}
+
+nav.next-prev {
+  margin: 20px 0 0 0;
+  a.prev,
+  a.next {
+    display: block;
+    width: 15px;
+    height: 11px;
+    text-indent: -9999px;
+  }
+  a.prev {
+    margin: 0 auto 5px auto;
+    background: transparent url(img/scroll-arrow-up.png) 0 0 no-repeat;
+  }
+  a.prev:hover {
+    background: transparent url(img/scroll-arrow-up.png) 0 -11px no-repeat;
+  }
+  a.next {
+    margin: 5px auto 0 auto;
+    background: transparent url(img/scroll-arrow-down.png) -1px 0 no-repeat;
+  }
+  a.next:hover {
+    background: transparent url(img/scroll-arrow-down.png) -1px -11px no-repeat;
+  }
+}
+
+//=--------------------------BG1
+
+#background-bg1{
+  position:absolute;
+  width:100%;
+  z-index:2;
+  ul.slides{
+    margin-top:$navbarHeight;
+    li{
+      //margin-bottom:30%;
+      img{
+        width:100%;
+      }
+    }
+  }
+}
 
 
 //-------------------------HOME
 
-body{
-  background-color:$brand_white;
-  #container{
-    padding-top:$navbarHeight;
-  }
+
+#container{
+  padding-top:$navbarHeight;
+  position:absolute;
+  z-index:3;
 }
+
 .content{
   min-height:500px;
   width:100%;
   display:block;
   padding:5%;
+  //background: transparent url(img/transparent-fill.png) repeat 0 0;
+  //background-color:rgba(255,255,255,.8);
+  background-color:$brand_white;
+  position:relative;
+  margin-bottom:400px;
+  @include tb_box-shadow($div-shadow);
   .section-title{
     @include fontSize(70);
     //float:right;
     color:$grayLighter;
     position:relative;
     display:block;
-    margin:0 auto 10px;
-    line-height:1.3em;
+    margin:0 auto 35px;
+    line-height:0.8em;
     width:90%;
     text-align:center;
   }
 }
 .home-content{
+  background:transparent;
+  height:500px;
+  margin-bottom:0 !important;
+  min-height:0;
   .logo{
-    width:500px;
-    height:294px;
-    margin: 0 auto;
+    width:400px;
+    height:194px;
     display: block;
+    position:absolute;
+    right:5px;
+    bottom:0;
   }
 }
 
 .products-content{
   height:auto;
+  width:100%;
   .brands{
     display:block;
     width:100%;
-    height:200px;
+    height:auto;
     ul li{
       margin:0 auto;
-
       img{
         height:auto;
         width:auto;
@@ -160,7 +263,7 @@ body{
 
 .services-content{
   width:100%;
-  margin:100px auto;
+
   ul{
     display:block;
     margin:10px auto 10px;
@@ -196,20 +299,27 @@ body{
     ul{
       margin:0 auto;
       li{
-        width:350px;
-        height:auto;
-        float:left;
-        margin:10px;
+        width: 350px;
+        height: 450px;
+        float: left;
+        margin: 10px;
+        border: $brand_ltgray 8px solid;
+        @include tb_border-radius(10px);
         h4{
           text-align: center;
           color:$brand-orange;
           width:80%;
+          margin:20px auto;
         }
         a{
+          margin: 0 auto;
           background:none;
           border:0;
           width:300px;
+          height:auto;
+          margin-left: 15px;
           img{
+            margin:0 auto;
             width:300px;
             height:auto;
             border:1px solid $brand_gray;
@@ -220,7 +330,6 @@ body{
   }
 }
 .about-content{
-  margin:100px auto;
   width:100%;
   h4{
     padding:10px 30px;
@@ -233,7 +342,6 @@ body{
   }
 }
 .contact-content{
-  margin:100px auto 200px;
   @include tb_center-block();
   width:auto;
 

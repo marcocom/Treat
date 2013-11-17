@@ -10,7 +10,6 @@
   border-radius: $borderRadiusBase;
   display:block;
   position:relative;
-  margin-bottom:20px;
   // Prevent floats from breaking the navbar
   @include tb_clearfix;
 }
@@ -91,7 +90,7 @@ nav-container {
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 7px 15px;
+  padding: 0 15px;
   font-size: 18px;
   font-weight: 500;
   line-height: $lineHeightBase * 1.5;

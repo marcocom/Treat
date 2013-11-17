@@ -27,13 +27,10 @@
         rewardsContent:null,
         googleAccount:"UA-10058232-10",
 
-        init: function(cmsUrl,projectHash, isLoggedIn) {
+        init: function() {
             if ($.support.touch) $('body').addClass('ipad-iphone');
-
-            this.contentManagementSysURL = cmsUrl;
-            this.isUserLoggedIn = isLoggedIn;
             this.setupEventManager();
-            $log("QUINCE:INIT cms:"+cmsUrl);
+            $log("TREAT:INIT ");
         },
         animationHelper: function(from, to, options) {
             $('<div />')
@@ -196,4 +193,4 @@
     this.Treat = Treat;
 
 })(jQuery);
-Treat.init("http://www.treat-amsterdam.com/cms", "234234234234", false);
+Treat.init();
