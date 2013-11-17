@@ -1,4 +1,7 @@
-
+.navbar .nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 nav#primary {
   right: 10px;
 }
@@ -11,4 +14,12 @@ nav#primary {
    width:50%;
    height:auto;
  }
+}
+.reviews-content .articles ul{
+  height: 900px;
+  width:100%;
+  li{
+    float:none;
+    margin:10px auto;
+  }
 }

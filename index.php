@@ -4,15 +4,15 @@
         <div class="navbar-inner">
             <div class="nav-container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#home"><h3>t  r  e  a  t</h3></a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <a class="navbar-brand" href="#home"><h3>t  r  e  a  t</h3></a>
                 </div>
                 <div class="nav-collapse collapse">
-                    <ul class="nav">
+                    <ul class="nav navbar-nav">
                         <li><a href='#products'><h3>products</h3></a></li>
                         <li><a href='#services'><h3>services</h3></a></li>
                         <li><a href='#reviews'><h3>review</h3></a></li>
@@ -193,19 +193,6 @@
             <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
             <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
             <li class="visible-phone"><img src="img/sliderphotos/img5.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img6.jpg"></li>
-
-            <li class="visible-phone"><img src="img/sliderphotos/img1.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img2.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img5.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img6.jpg"></li>
-
-            <li class="visible-phone"><img src="img/sliderphotos/img1.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img2.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img3.jpg"></li>
-            <li class="visible-phone"><img src="img/sliderphotos/img4.jpg"></li>
 
 
         </ul>

@@ -8,14 +8,14 @@
 
 (function($) {
 
-    var $t = Treat = {
+    var $t = this.Treat = {
 
         resetpassword : null,
         playboard : null,
         isUserLoggedIn : false,
         contentManagementSysURL:"",
         _uid : 0,
-        isiPad : (navigator.userAgent.match(/iPad/i) != null),
+        isiDevice : (navigator.userAgent.match(/iPad/i) != null && navigator.userAgent.match(/iPhone/i) != null ),
         isIE : ("v" == "\v"),
         welcomeContent:null,
         rankingContent:null,
@@ -189,8 +189,6 @@
     Treat.Event.PAGECHANGE = "PAGECHANGE";
     Treat.Event.DISCLAIMER = "DISCLAIMER";
     Treat.Event.CURRENTPAGE = "CURRENTPAGE";
-
-    this.Treat = Treat;
 
 })(jQuery);
 Treat.init();

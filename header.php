@@ -10,6 +10,9 @@
     <meta http-equiv="cleartype" content="on">
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 <!--    <script type="text/javascript" src="js/lib/modernizr.js"></script>-->
 </head>
 <body>

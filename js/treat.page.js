@@ -8,7 +8,7 @@
         },
         onNavClick:function(){
             var gotoY = $($(this).attr('href')).offset().top;
-            $log("GOTO:"+gotoY);
+            //$log("GOTO:"+gotoY);
             $('html, body').animate({
                 scrollTop:gotoY
             }, 1000, function() {
@@ -17,8 +17,10 @@
             return false;
         },
         onScroll : function(e){
+            if(!$t.isiDevice){
             this.parallaxScroll();
             this.redrawDotNav();
+            }
         }
     });
     $.extend($t.Page,
@@ -50,11 +52,11 @@
 //            this._postUrl = '/login';
             this._super($(el));
 
-            $log("LANDING init");
+            //$log("LANDING init");
 
             this.setupInteract();
 
-            this.setupFlexslider();
+//            this.setupFlexslider();
 
         },
 
@@ -105,28 +107,34 @@
                 $('html, body').animate({
                     scrollTop: target_top
                 }, 400);
+
                 return false;
             });
 
 
-            this.redrawDotNav();
 
             /* Scroll event handler */
             $(window).bind('scroll', $.proxy(this.onScroll, this));
 //            $(window).bind('scroll', this.onScroll);
 
             /* Next/prev and primary nav btn click handlers */
-            $('nav a').click(function(){
-                var gotoY = $($(this).attr('href')).offset().top;
-                $log("GOTO:"+gotoY);
-                $('html, body').animate({
-                    scrollTop:gotoY
-                }, 1000, function() {
-                    _this.parallaxScroll(); // Callback is required for iOS
-                });
-                return false;
-            });
+            if($t.isiDevice){
+                $('nav').hide();
 
+            } else {
+                this.redrawDotNav();
+
+                $('nav a').click(function(){
+                    var gotoY = $($(this).attr('href')).offset().top;
+                    //$log("GOTO:"+gotoY);
+                    $('html, body').animate({
+                        scrollTop:gotoY
+                    }, 1000, function() {
+                        _this.parallaxScroll(); // Callback is required for iOS
+                    });
+                    return false;
+                });
+            }
 //            $('nav a').click($.proxy(this.onNavClick, this));
 
         },

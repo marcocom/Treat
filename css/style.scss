@@ -102,6 +102,21 @@ html {
  overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 
+.navbar{
+  @include tb_box-shadow($div-shadow);
+  padding: 0px 15px;
+  .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .nav{
+    margin:0 0 0 0;
+    > li > a {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+}
 
 
 //--------------------------------------------SCROLL NAVS
@@ -298,6 +313,7 @@ nav.next-prev {
     margin:0 auto;
     ul{
       margin:0 auto;
+      height: 450px;
       li{
         width: 350px;
         height: 450px;

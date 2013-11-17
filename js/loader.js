@@ -4,6 +4,8 @@
     var jsFiles = [ // files to be conditionally included
         'lib/lodash.underscore.js',
         'lib/bootstrap.js',
+        'lib/bootstrap/bootstrap-collapse.js',
+        'lib/bootstrap/bootstrap-transition.js',
         'lib/jquery.fancybox.js',
         'jquery.ext.js',
         'treat.js',
