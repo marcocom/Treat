@@ -62,12 +62,47 @@
 
         setupInteract : function(){
             var _this = this;
-            var articleimg = '<div><img src="img/review/glamour.jpg" /></div>';
-            $("#blob").popover({ title: 'Glamour article', content:articleimg, html:true });
+
 
             $(".fancybox.article1").fancybox({
                 href : '/img/reviews/glamour.jpg',
                 title : 'Glamour',
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+            $("#flyer1").fancybox({
+                href : '/img/services/radient_health_A5.jpg',
+                title : 'Radient Health',
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+            $("#flyer2").fancybox({
+                href : '/img/services/pregnancy2.jpg',
+                title : 'Pregnancy Yoga',
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+            $("#flyer3").fancybox({
+                href : '/img/services/prenatal2.jpg',
+                title : 'Pre-Natal Care',
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+            $("#flyer4").fancybox({
+                href : '/img/services/yoga3.jpg',
+                title : 'Radient Health',
                 helpers: {
                     overlay: {
                         locked: false

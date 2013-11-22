@@ -307,43 +307,49 @@ nav.next-prev {
 }
 .reviews-content{
   width:100%;
-  .articles{
+  .articles,
+  flyers{
     position:relative;
     display:block;
+    margin:0 auto 20px;
+
+  }
+  ul{
     margin:0 auto;
-    ul{
-      margin:0 auto;
+    height: 450px;
+    li{
+      width: 350px;
       height: 450px;
-      li{
-        width: 350px;
-        height: 450px;
-        float: left;
-        margin: 10px;
-        border: $brand_ltgray 8px solid;
-        @include tb_border-radius(10px);
-        h4{
-          text-align: center;
-          color:$brand-orange;
-          width:80%;
-          margin:20px auto;
-        }
-        a{
-          margin: 0 auto;
-          background:none;
-          border:0;
+      float: left;
+      margin: 10px;
+      border: $brand_ltgray 2px solid;
+      @include tb_border-radius(6px);
+      h4{
+        text-align: center;
+        color:$brand-orange;
+        width:80%;
+        margin:20px auto;
+      }
+      a{
+        display:block;
+        margin: 0 auto;
+        background:none;
+        border:0;
+        width:300px;
+        height:370px;
+        margin-left: 15px;
+        overflow:hidden;
+        img{
+          margin:0 auto;
           width:300px;
           height:auto;
-          margin-left: 15px;
-          img{
-            margin:0 auto;
-            width:300px;
-            height:auto;
-            border:1px solid $brand_gray;
-          }
+          border:1px solid $brand_gray;
+
         }
       }
     }
   }
+
 }
 .about-content{
   width:100%;

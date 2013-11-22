@@ -15,7 +15,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href='#products'><h3>products</h3></a></li>
                         <li><a href='#services'><h3>services</h3></a></li>
-                        <li><a href='#reviews'><h3>review</h3></a></li>
+                        <li><a href='#reviews'><h3>latest</h3></a></li>
                         <li><a href='#about'><h3>about</h3></a></li>
                         <li><a href='#contact'><h3>contact</h3></a></li>
                     </ul>
@@ -105,6 +105,13 @@
                 <li><h3>marma treatment &euro;95</h3></li>
                 <li><h3>energy work &euro;95</h3></li>
             </ul>
+            <ul>
+                <li>
+                    <a href="hair.php">
+                        <img src=
+                    </a>
+                </li>
+            </ul>
             <nav class="next-prev">
                 <a class="prev products" href="#products">Prev</a>
                 <hr />
@@ -112,12 +119,12 @@
             </nav>
         </div>
         <div class="reviews-content content col-md-10 col-offset-1 row" id="reviews">
-            <h1 class="section-title">related news</h1>
+            <h1 class="section-title">latest updates</h1>
             <div class="articles col-md-10 col-md-offset-1">
                 <ul>
                     <li>
                         <h4>Glamour Magazine welcomes Treat's new debut to Amsterdam</h4>
-                        <a href="#article1" class="fancybox article1 btn" >
+                        <a href="article1" class="fancybox article1" >
                             <img src=img/reviews/glamour_thumb.jpg>
                         </a>
                     </li>
@@ -125,6 +132,34 @@
                         <h4>What is Ayurveda? Tory explains in interview.</h4>
                         <a href="http://www.youtube.com/watch?v=IwEI69xV5Lw&sns=em" class="fancybox-video">
                             <img src="img/reviews/interview_ayurveda.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <h4>Ayurveda in Women's Daily Lives</h4>
+                        <a id="flyer1" class="fancybox flyer1" href="#" >
+                            <img src="img/services/radient_health_thumb.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flyers col-md-10 col-md-offset-1">
+                <ul>
+                    <li>
+                        <h4>Pregnant and Expectant Mothers Yoga</h4>
+                        <a id="flyer2" class="fancybox" href="#">
+                            <img src="img/services/pregnancy2_thumb.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <h4>Ayurveda for Pre-Natal Care</h4>
+                        <a id="flyer3" class="fancybox" href="#">
+                            <img src="img/services/prenatal2_thumb.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <h4>Weekly Yoga</h4>
+                        <a id="flyer4" class="fancybox" href="#">
+                            <img src="img/services/yoga3_thumb.jpg">
                         </a>
                     </li>
                 </ul>

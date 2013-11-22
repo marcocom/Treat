@@ -1216,12 +1216,12 @@ nav.next-prev a.next:hover { background: transparent url(img/scroll-arrow-down.p
 .services-content ul li h3 sup { font-size: small; font-weight: 200; vertical-align: super; }
 
 .reviews-content { width: 100%; }
-.reviews-content .articles { position: relative; display: block; margin: 0 auto; }
-.reviews-content .articles ul { margin: 0 auto; height: 450px; }
-.reviews-content .articles ul li { width: 350px; height: 450px; float: left; margin: 10px; border: #cccccc 8px solid; border-top-right-radius: 10px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-left-radius: 10px; border-top-left-radius: 10px; }
-.reviews-content .articles ul li h4 { text-align: center; color: #ad6704; width: 80%; margin: 20px auto; }
-.reviews-content .articles ul li a { margin: 0 auto; background: none; border: 0; width: 300px; height: auto; margin-left: 15px; }
-.reviews-content .articles ul li a img { margin: 0 auto; width: 300px; height: auto; border: 1px solid #999999; }
+.reviews-content .articles, .reviews-content flyers { position: relative; display: block; margin: 0 auto 20px; }
+.reviews-content ul { margin: 0 auto; height: 450px; }
+.reviews-content ul li { width: 350px; height: 450px; float: left; margin: 10px; border: #cccccc 2px solid; border-top-right-radius: 6px; border-top-left-radius: 6px; border-bottom-right-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
+.reviews-content ul li h4 { text-align: center; color: #ad6704; width: 80%; margin: 20px auto; }
+.reviews-content ul li a { display: block; margin: 0 auto; background: none; border: 0; width: 300px; height: 370px; margin-left: 15px; overflow: hidden; }
+.reviews-content ul li a img { margin: 0 auto; width: 300px; height: auto; border: 1px solid #999999; }
 
 .about-content { width: 100%; }
 .about-content h4 { padding: 10px 30px; text-align: center; line-height: 1em; color: white; }
