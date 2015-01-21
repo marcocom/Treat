@@ -27,10 +27,52 @@
         </div>
     </div>
 
+    <nav id="primary">
+        <ul>
+            <li>
+                <a class="cuts" href="#cuts"><em></em>
+                    <h1>Men and Women's Hair Cuts</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="color" href="#color"><em></em>
+                    <h1>Color Treatment</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="extensions" href="#extensions"><em></em>
+                    <h1>Extensions</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="feathers" href="#feathers"><em></em>
+                    <h1>Feathers</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="about" href="#about"><em></em>
+                    <h1>About Lynn</h1>
+                </a>
+
+            </li>
+        </ul>
+    </nav>
 
     <div id="container" class="container row">
         <div class="hair-content content col-md-10 col-offset-1 row" id="home">
-            <img class="logo col-md-6 col-offset-3 img-responsive" src="img/main_logo.png">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="img/sliderphotos/img1.jpg"></li>
+                    <li><img src="img/sliderphotos/img2.jpg"></li>
+                    <li><img src="img/sliderphotos/img3.jpg"></li>
+                    <li><img src="img/sliderphotos/img4.jpg"></li>
+                    <li><img src="img/sliderphotos/img5.jpg"></li>
+                </ul>
+            </div>
         </div>
 
         <div class="cuts-content content col-md-10 col-offset-1 row" id="cuts">

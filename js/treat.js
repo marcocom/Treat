@@ -15,13 +15,10 @@
         isUserLoggedIn : false,
         contentManagementSysURL:"",
         _uid : 0,
-        isiDevice : (navigator.userAgent.match(/iPad/i) != null && navigator.userAgent.match(/iPhone/i) != null ),
+        isiDevice : (navigator.userAgent.match(/iPad/i) != null || navigator.userAgent.match(/iPhone/i) != null ),
         isIE : ("v" == "\v"),
-        welcomeContent:null,
-        rankingContent:null,
-        teamContent:null,
-        registerContent:null,
-        howContent:null,
+        hairContent:null,
+        heatlhContent:null,
         landingContent:null,
         teamregisterContent:null,
         rewardsContent:null,
@@ -30,7 +27,7 @@
         init: function() {
             if ($.support.touch) $('body').addClass('ipad-iphone');
             this.setupEventManager();
-            $log("TREAT:INIT ");
+            $log("TREAT:INIT isIpad/Iphone:"+this.isiDevice);
         },
         animationHelper: function(from, to, options) {
             $('<div />')

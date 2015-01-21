@@ -26,6 +26,40 @@
         </div>
     </div>
 
+    <nav id="primary">
+        <ul>
+            <li>
+                <a class="ayurveda" href="#ayurveda"><em></em>
+                    <h1>Ayurvedic Consultation and Treatment</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="yoga" href="#yoga"><em></em>
+                    <h1>Yoga Training</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="massage" href="#massage"><em></em>
+                    <h1>Massage</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="consulting" href="#consulting"><em></em>
+                    <h1>Consulting</h1>
+                </a>
+
+            </li>
+            <li>
+                <a class="about" href="#about"><em></em>
+                    <h1>About Tory</h1>
+                </a>
+
+            </li>
+        </ul>
+    </nav>
 
     <div id="container" class="container row">
         <div class="health-content content col-md-10 col-offset-1 row" id="home">

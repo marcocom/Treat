@@ -62,21 +62,17 @@
     <div id="container" class="container row">
         <div class="home-content content col-md-10 col-offset-1 row" id="home">
             <img class="logo img-responsive" src="img/logo_horizontal.png">
-<!--            <img class="logo col-md-6 col-offset-3 img-responsive" src="img/main_logo.png">-->
-<!--            <div class="flexslider">-->
-<!--                <ul class="slides">-->
-<!--                    <li><img src="img/sliderphotos/img1.jpg"></li>-->
-<!--                    <li><img src="img/sliderphotos/img2.jpg"></li>-->
-<!--                    <li><img src="img/sliderphotos/img3.jpg"></li>-->
-<!--                    <li><img src="img/sliderphotos/img4.jpg"></li>-->
-<!--                    <li><img src="img/sliderphotos/img5.jpg"></li>-->
-<!--                </ul>-->
-<!--            </div>-->
         </div>
         <div class="products-content content col-md-10 col-offset-1 row" id="products">
             <h1 class="section-title">our products</h1>
             <div class="brands">
                 <ul>
+                    <li>
+                        <img src="img/products/oils.jpg">
+                    </li>
+                    <li>
+                        <img src="img/products/deodorant_homepage.jpg">
+                    </li>
                     <li>
                         <img src="img/products/kama_homepage.jpg">
                     </li>
@@ -105,13 +101,13 @@
                 <li><h3>marma treatment &euro;95</h3></li>
                 <li><h3>energy work &euro;95</h3></li>
             </ul>
-            <ul>
-                <li>
-                    <a href="hair.php">
-                        <img src=
-                    </a>
-                </li>
-            </ul>
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="hair.php">-->
+<!--                        <img src=-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
             <nav class="next-prev">
                 <a class="prev products" href="#products">Prev</a>
                 <hr />
@@ -151,7 +147,7 @@
                         </a>
                     </li>
                     <li>
-                        <h4>Ayurveda for Pre-Natal Care</h4>
+                        <h4>Pregnancy, Birthing & Post-natal workshop</h4>
                         <a id="flyer3" class="fancybox" href="#">
                             <img src="img/services/prenatal2_thumb.jpg">
                         </a>
@@ -199,7 +195,7 @@
         </div>
 
     </div>
-    <div id="background-bg1">
+    <div id="background">
         <ul class="slides">
 <!--            <li><img src="img/main_img.jpg"></li>-->
             <li><img src="img/sliderphotos/img1.jpg"></li>
